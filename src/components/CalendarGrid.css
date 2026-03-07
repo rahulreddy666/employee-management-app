@@ -1,0 +1,81 @@
+/* =========================
+   DAYS HEADER (Sun–Sat)
+========================= */
+.day-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* =========================
+   CALENDAR GRID
+========================= */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+/* =========================
+   DAY CELL
+========================= */
+.day-cell {
+  min-height: 90px;
+  background: #e8f0fe;
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+/* Hover */
+.day-cell:hover {
+  border-color: #cfd8dc;
+}
+
+/* =========================
+   TODAY HIGHLIGHT
+========================= */
+.day-cell.today {
+  border: 2px solid #4285f4;
+  background: #f8f7d1;
+}
+
+/* =========================
+   DATE NUMBER
+========================= */
+.date-number {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+/* =========================
+   EVENTS
+========================= */
+.event {
+  margin-top: 4px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+/* Holiday */
+.event.holiday {
+  background: #c8e6c9;
+}
+
+/* Leave */
+.event.leave {
+  background: #fff3cd;
+}
+
+/* Birthday */
+.event.birthday {
+  background: #bbdefb;
+}

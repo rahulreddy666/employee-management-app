@@ -1,0 +1,48 @@
+/* =========================
+   MAIN CONTAINER
+========================= */
+.recruitment-container {
+  padding: 25px;
+}
+
+/* =========================
+   BUTTON GRID (ONLY DASHBOARD BUTTONS)
+========================= */
+.recruitment-buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  max-width: 900px;
+}
+
+/* =========================
+   COMMON BUTTON STYLE
+   (⚠️ SCOPED – DOES NOT AFFECT FORMS)
+========================= */
+.recruitment-buttons > button {
+  background: #22c55e;
+  color: white;
+  border: none;
+  height: 56px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+
+  /* Only grid buttons should be full width */
+  width: 100%;
+}
+
+.recruitment-buttons > button:hover {
+  background: #16a34a;
+}
+
+/* =========================
+   RESPONSIVE (MOBILE)
+========================= */
+@media (max-width: 768px) {
+  .recruitment-buttons {
+    grid-template-columns: 1fr;
+  }
+}

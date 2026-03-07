@@ -1,0 +1,150 @@
+/* =========================
+   LAYOUT
+========================= */
+.calendar-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 10px;
+  align-items: flex-start;
+}
+
+/* =========================
+   FILTERS PANEL
+========================= */
+.calendar-filters {
+  width: 220px;
+  background: #ffffff;
+  color: #1f2d3d;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  height: fit-content;
+}
+
+.calendar-filters h3 {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* ✅ PERFECT CHECKBOX + TEXT ALIGNMENT */
+.calendar-filters label {
+  display: grid;
+  grid-template-columns: 18px 1fr; /* checkbox | text */
+  column-gap: 10px;
+  align-items: start;
+  margin-bottom: 12px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* lock checkbox position */
+.calendar-filters input[type="checkbox"] {
+  margin: 0;
+  margin-top: 2px; /* aligns with first line of text */
+}
+
+/* =========================
+   MAIN CALENDAR AREA
+========================= */
+.calendar-main {
+  flex: 1;
+}
+
+/* =========================
+   HEADER
+========================= */
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.calendar-header .nav {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* Buttons */
+.btn {
+  background: #4caf50;
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.btn:hover {
+  background: #43a047;
+}
+
+/* =========================
+   CALENDAR GRID
+========================= */
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 10px;
+}
+
+.day-name {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* =========================
+   DAY CELLS
+========================= */
+.day-cell {
+  min-height: 90px;
+  background: #e8f0fe;
+  border-radius: 8px;
+  padding: 6px;
+  font-size: 13px;
+  border: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+.day-cell:hover {
+  border-color: #cfd8dc;
+}
+
+.day-cell.today {
+  border: 2px solid #4285f4;
+  background: #f8f7d1;
+}
+
+.date-number {
+  font-weight: bold;
+  font-size: 13px;
+  margin-bottom: 4px;
+  display: inline-block;
+}
+
+/* =========================
+   EVENTS
+========================= */
+.event {
+  margin-top: 4px;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  line-height: 1.3;
+}
+
+.event.holiday {
+  background: #c8e6c9;
+}
+
+.event.leave {
+  background: #fff3cd;
+}
+
+.event.birthday {
+  background: #bbdefb;
+}

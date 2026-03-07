@@ -1,0 +1,40 @@
+.leave-admin-page {
+  background: #f6f9fc;
+  padding: 20px;
+}
+
+.leave-admin-page h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.leave-table {
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  border-collapse: collapse;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.leave-table th {
+  background: #1f2d3d;
+  color: white;
+  padding: 12px;
+}
+
+.leave-table td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.leave-table select {
+  padding: 6px;
+  border-radius: 6px;
+}
+
+.no-requests {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}

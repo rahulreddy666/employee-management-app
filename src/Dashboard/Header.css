@@ -1,0 +1,37 @@
+.header {
+  background: #1aa39a;       /* header background */
+  color: white;              /* text color */
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* pushes button to right */
+  align-items: flex-start;        /* aligns content to top */
+  position: relative;             /* ensures absolute works if needed */
+}
+
+.header h3 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 28px;       /* aligns vertically with button */
+}
+
+.logout-btn {
+  background: #ffffff;        /* button white */
+  color: #1aa39a;             /* text color */
+  border: 1px solid #1aa39a;
+  padding: 8px 16px;          /* medium size button */
+  font-size: 14px; 
+  font-weight:bold;           /* text scales with button */
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  width: auto;                /* prevent full-width */
+  line-height: 1.2;           /* clean text alignment */
+}
+
+
+.logout-btn:hover {
+  background: #ffffff;
+  color: rgb(0, 0, 0);
+  border: 1px solid #1aa39a;
+}
