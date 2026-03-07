@@ -1,0 +1,168 @@
+/* =================================================
+   APPRAISAL MODULE – FULLY ISOLATED
+================================================= */
+
+/* ---------- LOCAL BUTTON RESET (APPRAISAL ONLY) ---------- */
+.appraisal-scope button {
+  width: auto;
+  min-width: unset;
+  max-width: unset;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* =================================================
+   PAGE CONTAINER
+================================================= */
+.appraisal-container {
+  padding: 25px;
+}
+
+/* =================================================
+   TITLE
+================================================= */
+.appraisal-title {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+/* =================================================
+   HEADER (ADD BUTTON)
+================================================= */
+.appraisal-header {
+  margin-bottom: 18px;
+}
+
+/* Add Button – Scoped */
+.appraisal-scope .add-btn {
+  background: #2563eb;
+  color: #fff;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.appraisal-scope .add-btn:hover {
+  background: #1d4ed8;
+}
+
+/* =================================================
+   TABLE
+================================================= */
+.appraisal-table {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 10px;
+  border-collapse: collapse;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+  overflow: hidden;
+}
+
+.appraisal-table th,
+.appraisal-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.appraisal-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+}
+
+/* Hover */
+.appraisal-table tbody tr:hover {
+  background: #f8fafc;
+}
+
+/* =================================================
+   STATUS BADGES
+================================================= */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  height: 35px;
+  border-radius: 18px;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.status-approved { background: #22c55e; }
+.status-pending  { background: #facc15; color: #000; }
+.status-rejected { background: #ef4444; }
+
+/* =================================================
+   ACTION COLUMN
+================================================= */
+.action-col {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Action Buttons – FIXED SIZE & CENTERED TEXT */
+.action-col button {
+  width: 90px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Individual buttons */
+.view-btn   { background: #3b82f6; color: #fff; }
+.edit-btn   { background: #10b981; color: #fff; }
+.delete-btn { background: #ef4444; color: #fff; }
+
+/* =================================================
+   APPRAISAL FORM BUTTONS
+================================================= */
+
+.appraisal-btn-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+  margin-top: 30px;
+}
+
+.appraisal-save-btn,
+.appraisal-cancel-btn {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.appraisal-save-btn {
+  background: #22c55e;
+  color: #fff;
+}
+
+.appraisal-cancel-btn {
+  background: #6b7280;
+  color: #fff;
+}
+

@@ -1,0 +1,240 @@
+/* ===============================
+   PAGE WRAPPER
+================================ */
+.designation-page {
+  padding: 24px;
+  background: #f4f7fb;
+  min-height: 100vh;
+  width: 95%;
+}
+
+/* Title */
+.designation-page h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2933;
+}
+
+/* ===============================
+   FORM CARD - FIXED PADDING
+================================ */
+.designation-form-card {
+  background: #ffffff;
+  padding: 24px 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+  margin-bottom: 22px;
+  width: 100%;
+  max-width: 100%;  /* Prevents over-stretching */
+  box-sizing: border-box;  /* Ensures padding included in width */
+}
+
+/* Row - ADDED BOTTOM MARGIN */
+.designation-form-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  margin-bottom: 16px;
+  padding-right: 0;  /* Ensures no extra right padding */
+}
+
+/* Input */
+.designation-input {
+  flex: 1;
+  height: 42px;
+  padding: 0 14px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: 1px solid #d0d7e2;
+  outline: none;
+  background: #ffffff;
+  transition: 0.2s;
+}
+
+.designation-input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 2px rgba(37, 99, 235, 0.15);
+}
+
+/* ===============================
+   FORM BUTTONS - IMPROVED SPACING
+================================ */
+.designation-create-btn {
+  height: 42px;
+  padding: 0 28px;
+  background: #16a34a;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s;
+  /* Removed margin-right - let flex gap handle spacing */
+}
+
+
+.designation-create-btn:hover {
+  background: #15803d;
+}
+
+.designation-edit-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.designation-update-btn,
+.designation-cancel-btn {
+  height: 42px;
+  padding: 0 22px;
+  border: none;
+  border-radius: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.designation-update-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.designation-update-btn:hover {
+  background: #1d4ed8;
+}
+
+.designation-cancel-btn {
+  background: #64748b;
+  color: white;
+}
+
+.designation-cancel-btn:hover {
+  background: #475569;
+}
+
+/* ===============================
+   TABLE CARD – FULL WIDTH FIX
+================================ */
+.designation-table-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  width: 100%;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.designation-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.designation-table thead {
+  background: #f1f5f9;
+}
+
+.designation-table th {
+  text-align: left;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.designation-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #1f2933;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ===============================
+   COLUMN WIDTH CONTROL
+================================ */
+.designation-table th:nth-child(1),
+.designation-table td:nth-child(1) {
+  width: 80px;
+}
+
+.designation-table th:nth-child(2),
+.designation-table td:nth-child(2) {
+  width: auto;
+}
+
+.designation-table th:nth-child(3),
+.designation-table td:nth-child(3) {
+  width: 260px;
+  text-align: right;
+}
+
+/* ===============================
+   ACTION BUTTONS
+================================ */
+.action-cell {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.action-cell button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  height: 38px;
+  padding: 0 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  transition: 0.2s ease;
+}
+
+/* Edit */
+.edit-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.edit-btn:hover {
+  background: #15803d;
+}
+
+/* Delete */
+.delete-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+/* ===============================
+   NO DATA
+================================ */
+.no-data {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* ===============================
+   GLOBAL SAFETY SHIELD
+================================ */
+.designation-form-card button,
+.designation-form-card input,
+.designation-table button {
+  width: auto !important;
+}

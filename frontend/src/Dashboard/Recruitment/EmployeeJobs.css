@@ -1,0 +1,103 @@
+/* ===============================
+   PAGE WRAPPER
+================================ */
+.employee-jobs-page {
+  padding: 24px;
+  background: #f4f7fb;
+  min-height: 100vh;
+}
+
+/* Title */
+.employee-jobs-page h2 {
+  margin-bottom: 18px;
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f2933;
+}
+
+/* ===============================
+   TABLE
+================================ */
+.employee-jobs-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.employee-jobs-table thead {
+  background: #f1f5f9;
+}
+
+.employee-jobs-table th {
+  text-align: left;
+  padding: 16px 20px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #334155;
+}
+
+.employee-jobs-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: #1f2933;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ===============================
+   NO DATA
+================================ */
+.employee-no-data {
+  text-align: center;
+  padding: 30px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+/* ===============================
+   ACTION BUTTONS
+================================ */
+.employee-job-actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 12px;
+}
+
+.employee-job-actions button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 110px;
+  height: 38px;
+  padding: 0 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+  transition: 0.2s ease;
+}
+
+/* View */
+.employee-view-btn {
+  background: #2563eb;
+  color: white;
+}
+
+.employee-view-btn:hover {
+  background: #1d4ed8;
+}
+
+/* Apply */
+.employee-apply-btn {
+  background: #16a34a;
+  color: white;
+}
+
+.employee-apply-btn:hover {
+  background: #15803d;
+}
