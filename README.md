@@ -1,70 +1,193 @@
-# Getting Started with Create React App
+# Employee Management System
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **Full Stack Employee Management System** built using **React (Frontend), Spring Boot (Backend), and MySQL (Database)**.
 
-## Available Scripts
+The application allows administrators and HR teams to manage employees, handle recruitment processes, manage leave requests, and maintain internal job postings.
+This project demonstrates **REST API development, authentication, and full CRUD operations** in a real-world enterprise-style application.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# Tech Stack
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Frontend
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* React.js
+* JavaScript
+* HTML
+* CSS
 
-### `npm test`
+### Backend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* Java
+* Spring Boot
+* Spring Security
+* REST APIs
 
-### `npm run build`
+### Database
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+* MySQL
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Tools
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Postman
+* Git & GitHub
+* Maven
+* VS Code
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+# Implemented Features
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+The following modules have **both frontend and backend functionality implemented**:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+* Employee Management (Add, Update, Delete, View employees)
+* Authentication system with login
+* Create / Reset login credentials for employees
+* Recruitment pipeline management
+* Leave request management
+* Internal job portal
+* Department / Domain management
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
+# Frontend Modules (Backend Not Implemented)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+The following modules currently have **frontend UI components created**, but backend APIs were **not implemented as part of the project scope**:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* View Job Applications
+* Calendar
+* Timesheets
+* Timesheet History
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Project Scope
 
-### Analyzing the Bundle Size
+This project was developed as part of a learning assignment.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Backend development was implemented only for selected modules such as **Employee Management, Authentication, Recruitment, and Leave Management**.
 
-### Making a Progressive Web App
+Some modules like **Calendar, Timesheets, Timesheet History, and Job Applications** currently contain only frontend UI components. Backend implementation for these modules was **not included in the scope of this project**.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+# Project Structure
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+employee-management-app
+│
+├── backend
+│   └── Spring Boot backend application
+│
+├── frontend
+│   └── React frontend application
+│
+├── database
+│   └── MySQL SQL scripts
+│
+├── postman
+│   └── API testing collection
+│
+├── images
+│   └── Application screenshots
+│
+└── README.md
+```
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+# Application Screenshots
 
-### `npm run build` fails to minify
+### Login Page
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Login](images/Screenshot%20\(3005\).png)
+
+### Dashboard
+
+![Dashboard](images/Screenshot%20\(3006\).png)
+
+### Employee Management
+
+![Employees](images/Screenshot%20\(3007\).png)
+
+### Leave Requests
+
+![Leave](images/Screenshot%20\(3008\).png)
+
+### Recruitment Management
+
+![Recruitment](images/Screenshot%20\(3009\).png)
+
+---
+
+# How to Run the Project
+
+## Backend
+
+Navigate to backend folder
+
+```
+cd backend
+```
+
+Run Spring Boot application
+
+```
+mvn spring-boot:run
+```
+
+Server will start at:
+
+```
+http://localhost:8080
+```
+
+---
+
+## Frontend
+
+Navigate to frontend folder
+
+```
+cd frontend
+```
+
+Install dependencies
+
+```
+npm install
+```
+
+Start React application
+
+```
+npm start
+```
+
+Application will run at:
+
+```
+http://localhost:3000
+```
+
+---
+
+# API Testing
+
+All backend APIs were tested using **Postman**.
+The Postman collection for this project is available in the `postman` folder of this repository.
+
+---
+
+# Author
+
+**Rahul Reddy Karri**
+
+GitHub
+https://github.com/rahulreddy666
+
+---
+
+# License
+
+This project is created for **learning and demonstration purposes**.
